@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<CENTER>
+    <br /><br /><br />
+
+    <h2>Opciones</h2>
+    <div content="width=device-widt" class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <form asp-controller="Gimnasio" asp-action="IndexGym" class="col-sm-6">
+                <button type="submit" class="btn btn-primary">Centros de Entrenamiento</button>
+            </form><br>
+
+            <form  asp-controller="Gimnasio" asp-action="IndexGym" class="col-sm-6">
+                <button type="submit" class="btn btn-primary">Clientes</button>
+            </form>
+
+        </div>
+        <div class="col-sm-2"></div>
+        <br>
+    </div>
+</CENTER> 
