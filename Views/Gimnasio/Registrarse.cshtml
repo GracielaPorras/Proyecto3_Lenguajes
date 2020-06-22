@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = "Registrar";
 }
-@model Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Models.Gimnasio
+@model String
 
 <CENTER>
     <br /><br /><br />
@@ -12,11 +12,17 @@
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
             <form asp-action="RegistraGYM" method="POST">
-
+                @if (Model != null)
+                {
+                    <div class="alert alert-success" id="al1" role="alert" style="display: block; text-align:center">
+                        @Model
+                    </div>
+                    <br>
+                }
                 <input type="text" style=" margin-bottom: 15px;" class="form-control" id="Nombre" name="Nombre"
                        placeholder="Nombre de negocio" required />
 
-                <textarea class="form-control" id="Descripcion" name="Descripcion" cols="31" rows="8" 
+                <textarea class="form-control" id="Descripcion" name="Descripcion" cols="31" rows="8"
                           placeholder="Descripcion" required></textarea>
 
                 <input type="text" style=" margin-bottom: 15px;" class="form-control" id="Tel" name="Tel"
