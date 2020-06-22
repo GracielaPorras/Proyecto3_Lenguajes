@@ -37,6 +37,15 @@ C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Gr
 C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
 C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\obj\Debug\netcoreapp3.1\Razor\Views\Gimnasio\Registrarse.cshtml.g.cs
 C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\obj\Debug\netcoreapp3.1\Razor\Views\Gimnasio\IndexGym.cshtml.g.cs
+C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\obj\Debug\netcoreapp3.1\Razor\Views\Gimnasio\Principal.cshtml.g.cs
+C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutCentroE.cshtml.g.cs
+C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\obj\Debug\netcoreapp3.1\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.csproj.CoreCompileInputs.cache
 C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\obj\Debug\netcoreapp3.1\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\obj\Debug\netcoreapp3.1\Razor\Views\Gimnasio\IndexGym.cshtml.g.cs
+C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll

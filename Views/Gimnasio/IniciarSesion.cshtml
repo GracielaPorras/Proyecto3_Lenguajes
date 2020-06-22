@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = "IniciarSesion";
 }
-@model Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Models.Gimnasio
+@model String
     <CENTER>
         <br /><br /><br />
 
@@ -10,12 +10,20 @@
         <div content="width=device-widt" id="form" class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <form >
+                <form asp-action="IniciarGYM"   method="POST">
+
+                    @if (Model != null)
+                    {
+                        <div class="alert alert-success" id="al1" role="alert" style="display: block; text-align:center">
+                            @Model
+                        </div>
+                        <br>
+                    }
 
                     <input type="text" style=" margin-bottom: 15px;" class="form-control" id="Nombre" name="Nombre"
                            placeholder="Nombre de usuario" required />
-                    <input type="password" style="margin-bottom: 15px;" class="form-control" id="Contra"
-                           name="Contra"
+                    <input type="password" style="margin-bottom: 15px;" class="form-control" id="Password"
+                           name="Password"
                            placeholder="Contraseña"
                            required />
 
