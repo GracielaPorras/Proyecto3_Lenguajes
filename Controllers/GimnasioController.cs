@@ -11,7 +11,7 @@ using Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Models;
 using Microsoft.AspNetCore.WebUtilities;
 using System.Web.Helpers;
 using Newtonsoft.Json.Linq;
-
+//Prueba Randall
 namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
 {
     public class GimnasioController : Controller
