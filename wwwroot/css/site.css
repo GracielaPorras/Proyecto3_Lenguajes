@@ -66,3 +66,31 @@ body {
 }
 
 /*CallToAction*/
+
+/*ClienteGimnasios*/
+
+#cuerposClientes {
+    background-color: #dbd8d8;
+}
+
+#headersClientes{
+    color: #dbd8d8;
+}
+
+#tablaGimnasiosCliente tr td button {
+    background-color: #7CCA05;
+    outline: 0;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 0;
+}
+
+    #tablaGimnasiosCliente tr td button:hover {
+        background-color: #8AE302;
+    }
+
+    #titulos{
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
