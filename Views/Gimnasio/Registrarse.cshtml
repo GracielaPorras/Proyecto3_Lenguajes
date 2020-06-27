@@ -5,55 +5,54 @@
 @model String
 
 <CENTER>
-    <br /><br /><br />
+    
+    <form class="col-sm-10" asp-action="RegistraGYM" method="POST">
 
-    <h2>Registrar centro de entrenamiento</h2>
-    <div content="width=device-widt" id="form" class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-            <form asp-action="RegistraGYM" method="POST">
-                @if (Model != null)
-                {
-                    <div class="alert alert-success" id="al1" role="alert" style="display: block; text-align:center">
-                        @Model
-                    </div>
-                    <br>
-                }
-                <input type="text" style=" margin-bottom: 15px;" class="form-control" id="Nombre" name="Nombre"
-                       placeholder="Nombre de negocio" required />
+        <h2>Registrar centro de entrenamiento</h2> <br>
 
-                <textarea class="form-control" id="Descripcion" name="Descripcion" cols="31" rows="8"
-                          placeholder="Descripcion" required></textarea>
+        @if (Model != null)
+        {
+            <div class="alert alert-success" id="al1" role="alert" style="display: block; text-align:center">
+                @Model
+            </div>
+            <br>
+        }
+        <div class="col-sm-5">
 
-                <input type="text" style=" margin-bottom: 15px;" class="form-control" id="Tel" name="Tel"
-                       placeholder="Teléfono" required />
+            <input type="text" style=" margin-bottom: 15px;" class="form-control" id="Nombre" name="Nombre"
+                   placeholder="Nombre de negocio" required /><br>
 
-                <input type="text" style=" margin-bottom: 15px;" class="form-control" id="Ubicacion" name="Ubicacion"
-                       placeholder="Ubicación" required />
+            <textarea class="form-control" id="Descripcion" name="Descripcion" cols="31" rows="8"
+                      placeholder="Descripcion" required></textarea><br>
 
-                <input type="email" style=" margin-bottom: 15px;" class="form-control" id="Correo" name="Correo"
-                       placeholder="Correo Electrónico" required />
+            <input type="text" style=" margin-bottom: 15px;" class="form-control" id="Tel" name="Tel"
+                   placeholder="Teléfono" required /><br>
 
-                <input type="number" style=" margin-bottom: 15px;" class="form-control" id="Capacidad" name="Capacidad"
-                       placeholder="Capacidad Máxima" required />
+            <input type="text" style=" margin-bottom: 15px;" class="form-control" id="Ubicacion" name="Ubicacion"
+                   placeholder="Ubicación" required /><br>
 
-                <input type="number" style=" margin-bottom: 15px;" class="form-control" id="porcentaje" name="porcentaje"
-                       placeholder="Porcentaje Máximo" required />
-
-                <input type="file" class="form-control" accept="image/png, .jpeg, .jpg, image/gif" id="Logo" name="Logo">
-
-                <input type="file" class="form-control" accept="image/png, .jpeg, .jpg, image/gif" id="imagenes" name="imagenes">
-
-
-                <input type="password" style=" margin-bottom: 15px;" class="form-control" id="Password" name="Password"
-                       placeholder="Contraseña" required />
-
-
-                <button type="submit" class="btn btn-primary">Registrar</button>
-
-            </form>
+            <input type="email" style=" margin-bottom: 15px;" class="form-control" id="Correo" name="Correo"
+                   placeholder="Correo Electrónico" required /><br>
         </div>
-        <div class="col-sm-4"></div>
-        <br>
-    </div>
+
+        <div class="col-sm-5">
+            <input type="number" style=" margin-bottom: 15px;" class="form-control" id="Capacidad" name="Capacidad"
+                    placeholder="Capacidad Máxima" required /><br>
+
+            <input type="number" style=" margin-bottom: 15px;" class="form-control" id="porcentaje" name="porcentaje"
+                    placeholder="Porcentaje Máximo" required /><br>
+
+            <input type="file" class="form-control" accept="image/png, .jpeg, .jpg, image/gif" id="Logo" name="Logo"><br>
+
+            <input type="file" class="form-control" accept="image/png, .jpeg, .jpg, image/gif" id="imagenes" name="imagenes" multiple><br>
+
+
+            <input type="password" style=" margin-bottom: 15px;" class="form-control" id="Password" name="Password"
+                    placeholder="Contraseña" required /><br>
+
+
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </div>
+
+    </form>
 </CENTER> 

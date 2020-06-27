@@ -1,0 +1,124 @@
+﻿@{
+    ViewData["Title"] = "MiEstablecimiento";
+}
+<form class="col-sm-10" asp-action="RegistraGYM" method="POST">
+
+    <h2>Mi establecimiento</h2> <br>
+    <div class="col-sm-5">
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Abierto</th>
+                    <th>Cerrado</th>
+                </tr>
+            <thead>
+            <tbody>
+                <tr id="L">
+
+                    <td>Lunes</td>
+
+                    <td>
+                        <input type="time" id="abreL" name="abreL">
+                    </td>
+
+                    <td>
+                        <input type="time" id="cierraL" name="cierraL">
+                    </td>
+
+                </tr>
+                <tr id="M">
+
+                    <td>Martes</td>
+
+                    <td>
+                        <input type="time" id="abreM" name="abreM">>
+                    </td>
+
+                    <td>
+                        <input type="time" id="cierraM" name="cierraM">
+
+                    </td>
+
+                </tr>
+                <tr id="K">
+
+                    <td>Miércoles</td>
+
+                    <td>
+                        <input type="time" id="abreK" name="abreK">
+                    </td>
+
+                    <td>
+                        <input type="time" id="cierraK" name="cierraK">
+                    </td>
+
+                </tr>
+                <tr id="J">
+
+                    <td>Jueves</td>
+
+                    <td>
+                        <input type="time" id="abreJ" name="abreJ">
+                    </td>
+
+                    <td>
+                        <input type="time" id="cierraJ" name="cierraJ">
+                    </td>
+
+                </tr>
+                <tr id="V">
+
+                    <td>Viernes</td>
+
+                    <td>
+                        <input type="time" id="abreV" name="abreV">
+                    </td>
+
+                    <td>
+                        <input type="time" id="cierraV" name="cierraV">
+                    </td>
+
+                </tr>
+                <tr id="S">
+
+                    <td>Sábado</td>
+
+                    <td>
+                        <input type="time" id="abreS" name="abreS">
+                    </td>
+
+                    <td>
+                        <input type="time" id="cierraS" name="cierraS">
+                    </td>
+
+                </tr>
+                <tr id="D">
+
+                    <td>Domingo</td>
+
+                    <td>
+                        <input type="time" id="abreD" name="abreD">
+                    </td>
+
+                    <td>
+                        <input type="time" id="cierraD" name="cierraD">
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="col-sm-5">
+        <input type="number" style=" margin-bottom: 15px;" class="form-control" id="CapAct" name="CapAct"
+               placeholder="Capacidad Máxima" required /><br>
+
+        <input type="number" style=" margin-bottom: 15px;" class="form-control" id="porcentAct" name="porcentAct"
+               placeholder="Porcentaje Máximo" required /><br>
+
+        <button type="submit" class="btn btn-secondary">Guardar cambios</button>
+    </div>
+
+</form>

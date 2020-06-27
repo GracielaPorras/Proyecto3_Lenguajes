@@ -49,3 +49,4 @@ C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Gr
 C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
 C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
 C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+C:\Users\Graciela Porras\source\repos\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall\obj\Debug\netcoreapp3.1\Razor\Views\Gimnasio\Establecimiento.cshtml.g.cs
