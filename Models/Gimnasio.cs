@@ -8,31 +8,34 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Models
 {
     public class Gimnasio
     {
+        [JsonProperty("Id")]
+        public string id { get; set; }
+
         [JsonProperty("Nombre")]
-        public string Nombre { get; set; }
+        public string nombre { get; set; }
 
         [JsonProperty("Password")]
-        public string Password { get; set; }
+        public string password { get; set; }
 
         [JsonProperty("Descripcion")]
-        public string Descripcion { get; set; }
+        public string descripcion { get; set; }
 
         [JsonProperty("Ubicacion")]
-        public string Ubicacion { get; set; }
+        public string ubicacion { get; set; }
 
         [JsonProperty("Tel")]
-        public string Tel { get; set; }
+        public string tel { get; set; }
 
         [JsonProperty("Correo")]
-        public string Correo { get; set; }
+        public string correo { get; set; }
 
         [JsonProperty("Capacidad")]
-        public int Capacidad { get; set; }
+        public int capacidad { get; set; }
 
         [JsonProperty("porcentaje")]
         public float porcentaje { get; set; }
 
         [JsonProperty("Logo")]
-        public string Logo { get; set; }
+        public string logo { get; set; }
     }
 }
