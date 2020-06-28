@@ -169,16 +169,15 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
 
             if (respuesta.id == "0")
             {
-
-                HttpContext.Session.SetString("idGYM", respuesta.id);
-                HttpContext.Session.SetString("nombreGYM", respuesta.nombre);
-                HttpContext.Session.SetString("descripGYM", respuesta.descripcion);
-                HttpContext.Session.SetString("capacidadGYM", respuesta.capacidad);
-                HttpContext.Session.SetString("porcentGYM", respuesta.porcentaje);
-                HttpContext.Session.SetString("LogoGYM", respuesta.logo);
-                HttpContext.Session.SetString("ubicacionGYM", respuesta.ubicacion);
-                HttpContext.Session.SetString("telefonoGYM", respuesta.tel);
-                HttpContext.Session.SetString("correoGYM", respuesta.correo);
+                HttpContext.Session.SetString("idGym", respuesta.id);
+                HttpContext.Session.SetString("nombreGym", respuesta.nombre);
+                HttpContext.Session.SetString("descripGym", respuesta.descripcion);
+                HttpContext.Session.SetString("capacidadGym", respuesta.capacidad);
+                HttpContext.Session.SetString("porcentGym", respuesta.porcentaje);
+                HttpContext.Session.SetString("LogoGym", respuesta.logo);
+                HttpContext.Session.SetString("ubicacionGym", respuesta.ubicacion);
+                HttpContext.Session.SetString("telefonoGym", respuesta.tel);
+                HttpContext.Session.SetString("correoGym", respuesta.correo);
 
                 return View("IniciarSesion", "Usuario y contraseña inválidos");
 
