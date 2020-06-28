@@ -165,19 +165,23 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
 
 
             Gimnasio respuesta = Newtonsoft.Json.JsonConvert.DeserializeObject<Gimnasio>(responseBody);
-            if (respuesta.nombre == "0" && respuesta.logo == "0")
+
+
+            if (respuesta.id == "0")
             {
-                HttpContext.Session.SetString("idGym", respuesta.id);
-                HttpContext.Session.SetString("nombreGym", respuesta.nombre);
-                HttpContext.Session.SetString("descripGym", respuesta.descripcion);
-                HttpContext.Session.SetString("capacidadGym", respuesta.capacidad);
-                HttpContext.Session.SetString("porcentGym", respuesta.porcentaje);
-                HttpContext.Session.SetString("Logo", respuesta.logo);
-                HttpContext.Session.SetString("ubicacion", respuesta.ubicacion);
-                HttpContext.Session.SetString("telefono", respuesta.tel);
-                HttpContext.Session.SetString("correo", respuesta.correo);
+
+                HttpContext.Session.SetString("idGYM", respuesta.id);
+                HttpContext.Session.SetString("nombreGYM", respuesta.nombre);
+                HttpContext.Session.SetString("descripGYM", respuesta.descripcion);
+                HttpContext.Session.SetString("capacidadGYM", respuesta.capacidad);
+                HttpContext.Session.SetString("porcentGYM", respuesta.porcentaje);
+                HttpContext.Session.SetString("LogoGYM", respuesta.logo);
+                HttpContext.Session.SetString("ubicacionGYM", respuesta.ubicacion);
+                HttpContext.Session.SetString("telefonoGYM", respuesta.tel);
+                HttpContext.Session.SetString("correoGYM", respuesta.correo);
 
                 return View("IniciarSesion", "Usuario y contraseña inválidos");
+
             }
             else
             {
