@@ -30,7 +30,7 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Models
         public string correo { get; set; }
 
         [JsonProperty("Capacidad")]
-        public String capacidad { get; set; }
+        public string capacidad { get; set; }
 
         [JsonProperty("porcentaje")]
         public string porcentaje { get; set; }

@@ -61,6 +61,11 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
             return View();
         }
 
+        public ActionResult Establecimiento()
+        {
+            return View();
+        }
+
         // GET: GimnasioController/Details/5
         public ActionResult Details(int id)
         {
@@ -123,8 +128,7 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
             
         }
 
-        public ActionResult IniciarGYM(Gimnasio GYM)
-        {
+        public ActionResult IniciarGYM(Gimnasio GYM){
             string responseBody = "";
 
             conexion("/iniciar", "POST");
@@ -157,17 +161,21 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
                 System.Diagnostics.Debug.WriteLine("**********error*************");
                 // Handle error
             };
-            Gimnasio g = new Gimnasio();
 
-            Respuesta respuesta= Newtonsoft.Json.JsonConvert.DeserializeObject<Respuesta>(responseBody);
-            if (respuesta.Resultado == "1")
-            {
-                return View("Principal");
-            }
-            else
+
+            Gimnasio respuesta = Newtonsoft.Json.JsonConvert.DeserializeObject<Gimnasio>(responseBody);
+            if (respuesta.nombre == "0" && respuesta.logo == "0")
             {
                 return View("IniciarSesion", "Usuario y contraseña inválidos");
             }
+            else
+            {
+
+                return View("Principal");
+
+            }
+
+
         }
 
     }

@@ -299,3 +299,4 @@ C:\Users\Graciela Porras\source\repos\Proyecto3_Lenguajes\obj\Debug\netcoreapp3.
 C:\Users\Graciela Porras\source\repos\Proyecto3_Lenguajes\obj\Debug\netcoreapp3.1\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.dll
 C:\Users\Graciela Porras\source\repos\Proyecto3_Lenguajes\obj\Debug\netcoreapp3.1\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.pdb
 C:\Users\Graciela Porras\source\repos\Proyecto3_Lenguajes\obj\Debug\netcoreapp3.1\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.genruntimeconfig.cache
+C:\Users\Graciela Porras\source\repos\Proyecto3_Lenguajes\obj\Debug\netcoreapp3.1\Razor\Views\Gimnasio\Establecimiento.cshtml.g.cs
