@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "loginCliente";
+    Layout = "_LayoutClienteVacio";
+}
+
+
+@model String
+
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-1 col-lg-2 col-xl-3"></div>
+        <div id="divLogin" class="col-10 col-lg-8 col-xl-6">
+            <form autocomplete="off">
+                <div><img src="~/icons/exercise.svg" width="100" height="100" /></div>
+                <input type="text" name="username" placeholder="Nombre de Usuario" required />
+                <input type="password" name="password" placeholder="Contraseña" required />
+                <input type="submit" value="Login" id="submitCliente" />
+            </form>
+            <span id="errorLoginSpan"> </span>
+        </div>
+        <div class="col-1 col-lg-2 col-xl-3"></div>
+    </div>
+</section>
+
+

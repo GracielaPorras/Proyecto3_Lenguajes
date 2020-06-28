@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Models;
+using Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Models.ModelosCliente;
 
 namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
 {
@@ -41,13 +42,13 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
         public IActionResult Index()
         {
             
-            List<Gimnasio> gimnasios = null;
+            List<GimnasioModel> gimnasios = null;
             conexion("/consultarGimnasios", "GET");
             string json = null;
             Stream stream = resp.GetResponseStream();
             StreamReader sr = new StreamReader(stream);
             json = sr.ReadToEnd();
-            gimnasios = System.Text.Json.JsonSerializer.Deserialize<List<Gimnasio>>(json);
+            gimnasios = System.Text.Json.JsonSerializer.Deserialize<List<GimnasioModel>>(json);
 
             sr.Close();
             resp.Close();
@@ -55,6 +56,12 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
             ViewBag.Gimnasios = gimnasios;
             
             return View();
+        }
+
+        public IActionResult loginCliente(string id_gym, string logo_gym)
+        {
+            HttpContext.Session.SetString("ClienteGymActual", id_gym);
+            return View("loginCliente", logo_gym);
         }
     }
 }
