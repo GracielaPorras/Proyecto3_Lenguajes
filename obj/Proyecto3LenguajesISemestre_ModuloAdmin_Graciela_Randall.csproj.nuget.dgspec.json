@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Graciela Porras\\source\\repos\\Proyecto3_Lenguajes\\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.csproj": {}
+    "D:\\UCR\\Progra\\Codigos C#\\Proyecto3_Lenguajes\\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Graciela Porras\\source\\repos\\Proyecto3_Lenguajes\\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.csproj": {
+    "D:\\UCR\\Progra\\Codigos C#\\Proyecto3_Lenguajes\\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Graciela Porras\\source\\repos\\Proyecto3_Lenguajes\\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.csproj",
+        "projectUniqueName": "D:\\UCR\\Progra\\Codigos C#\\Proyecto3_Lenguajes\\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.csproj",
         "projectName": "Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall",
-        "projectPath": "C:\\Users\\Graciela Porras\\source\\repos\\Proyecto3_Lenguajes\\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.csproj",
-        "packagesPath": "C:\\Users\\Graciela Porras\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Graciela Porras\\source\\repos\\Proyecto3_Lenguajes\\obj\\",
+        "projectPath": "D:\\UCR\\Progra\\Codigos C#\\Proyecto3_Lenguajes\\Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.csproj",
+        "packagesPath": "C:\\Users\\randa\\.nuget\\packages\\",
+        "outputPath": "D:\\UCR\\Progra\\Codigos C#\\Proyecto3_Lenguajes\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Graciela Porras\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\randa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015115\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -73,11 +73,34 @@ body {
     background-color: #dbd8d8;
 }
 
-#headersClientes{
+#divLogin {
+    background-color: gray;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+    #divLogin form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+        #divLogin form input {
+            margin-bottom: 1em;
+            border-radius: 10px;
+            border: 0;
+            outline: 0;
+        }
+
+#errorLoginSpan {
+    color: red;
+}
+
+#headersClientes {
     color: #dbd8d8;
 }
 
-#tablaGimnasiosCliente tr td button {
+#tablaGimnasiosCliente tr td input, #submitCliente {
     background-color: #7CCA05;
     outline: 0;
     border-radius: 10px;
@@ -85,12 +108,40 @@ body {
     border: 0;
 }
 
-    #tablaGimnasiosCliente tr td button:hover {
+    #tablaGimnasiosCliente tr td input:hover, #submitCliente:hover {
         background-color: #8AE302;
     }
 
-    #titulos{
-        text-align: center;
-        margin-top: 1em;
-        margin-bottom: 1em;
+#titulos {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*@Media*/
+/*Tablet Grande*/
+@media only screen and (max-device-width: 1024px) {
+    #divLogin form div img {
+        width: 150px;
+        height: 150px;
     }
+
+    #divLogin form input {
+        font-size: 30px;
+    }
+}
+
+/*Tablet Mediana*/
+@media only screen and (max-device-width: 768px) {
+}
+/*Movil*/
+@media only screen and (max-device-width: 414px) {
+    #divLogin form div img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #divLogin form input {
+        font-size: 20px;
+    }
+}
