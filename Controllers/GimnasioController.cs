@@ -11,6 +11,7 @@ using Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Models;
 using Microsoft.AspNetCore.WebUtilities;
 using System.Web.Helpers;
 using Newtonsoft.Json.Linq;
+using Microsoft.AspNetCore.Http;
 //Prueba Randall
 namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
 {
@@ -158,15 +159,28 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
             }
             catch (WebException ex)
             {
-                System.Diagnostics.Debug.WriteLine("**********error*************");
+                System.Diagnostics.Debug.WriteLine("**********error*************", ex);
                 // Handle error
             };
 
 
             Gimnasio respuesta = Newtonsoft.Json.JsonConvert.DeserializeObject<Gimnasio>(responseBody);
-            if (respuesta.nombre == "0" && respuesta.logo == "0")
+
+
+            if (respuesta.id == "0")
             {
+                HttpContext.Session.SetString("idGym", respuesta.id);
+                HttpContext.Session.SetString("nombreGym", respuesta.nombre);
+                HttpContext.Session.SetString("descripGym", respuesta.descripcion);
+                HttpContext.Session.SetString("capacidadGym", respuesta.capacidad);
+                HttpContext.Session.SetString("porcentGym", respuesta.porcentaje);
+                HttpContext.Session.SetString("LogoGym", respuesta.logo);
+                HttpContext.Session.SetString("ubicacionGym", respuesta.ubicacion);
+                HttpContext.Session.SetString("telefonoGym", respuesta.tel);
+                HttpContext.Session.SetString("correoGym", respuesta.correo);
+
                 return View("IniciarSesion", "Usuario y contraseña inválidos");
+
             }
             else
             {
