@@ -157,9 +157,8 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
                 System.Diagnostics.Debug.WriteLine("**********error*************");
                 // Handle error
             };
+            Gimnasio g = new Gimnasio();
 
-            //var obj = JObject.Parse(responseBody);
-            
             Respuesta respuesta= Newtonsoft.Json.JsonConvert.DeserializeObject<Respuesta>(responseBody);
             if (respuesta.Resultado == "1")
             {
@@ -169,8 +168,6 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
             {
                 return View("IniciarSesion", "Usuario y contraseña inválidos");
             }
-
-            //probar
         }
 
     }
