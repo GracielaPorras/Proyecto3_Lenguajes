@@ -32,7 +32,7 @@
                     <td>Martes</td>
 
                     <td>
-                        <input type="time" id="abreM" name="abreM">>
+                        <input type="time" id="abreM" name="abreM">
                     </td>
 
                     <td>
@@ -113,10 +113,12 @@
 
     <div class="col-sm-5">
         <input type="number" style=" margin-bottom: 15px;" class="form-control" id="CapAct" name="CapAct"
-               placeholder="Capacidad Máxima" required /><br>
+               placeholder="Capacidad Máxima" value="@Model.capacidad" required /><br>
 
         <input type="number" style=" margin-bottom: 15px;" class="form-control" id="porcentAct" name="porcentAct"
-               placeholder="Porcentaje Máximo" required /><br>
+               placeholder="Porcentaje Máximo" value="@Model.capacidad" required /><br>
+
+        <textarea class="form-control" id="descripcion" name="descripcion" cols="31" rows="8"  required> @Model.descripcion</textarea>
 
         <button type="submit" class="btn btn-secondary">Guardar cambios</button>
     </div>

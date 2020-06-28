@@ -302,3 +302,4 @@ C:\Users\Graciela Porras\source\repos\Proyecto3_Lenguajes\obj\Debug\netcoreapp3.
 C:\Users\Graciela Porras\source\repos\Proyecto3_Lenguajes\obj\Debug\netcoreapp3.1\Razor\Views\Gimnasio\Establecimiento.cshtml.g.cs
 D:\UCR\Progra\Codigos C#\Proyecto3_Lenguajes\obj\Debug\netcoreapp3.1\Razor\Views\Gimnasio\Establecimiento.cshtml.g.cs
 D:\UCR\Progra\Codigos C#\Proyecto3_Lenguajes\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\loginCliente.cshtml.g.cs
+C:\Users\Graciela Porras\source\repos\Proyecto3_Lenguajes\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\loginCliente.cshtml.g.cs

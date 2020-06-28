@@ -64,7 +64,19 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
 
         public ActionResult Establecimiento()
         {
-            return View();
+            Gimnasio g = new Gimnasio();
+            g.id=(string)HttpContext.Session.GetString("idGym");
+            g.nombre = (string)HttpContext.Session.GetString("nombreGym");
+            g.descripcion = (string)HttpContext.Session.GetString("descripGym");
+            g.capacidad = (string)HttpContext.Session.GetString("capacidadGym");
+            g.porcentaje = (string)HttpContext.Session.GetString("porcentGym");
+            g.logo = (string)HttpContext.Session.GetString("LogoGym");
+            g.ubicacion = (string)HttpContext.Session.GetString("ubicacionGym");
+            g.tel = (string)HttpContext.Session.GetString("telefonoGym");
+            g.correo = (string)HttpContext.Session.GetString("correoGym");
+
+
+            return View("Establecimiento", g);
         }
 
         // GET: GimnasioController/Details/5
@@ -169,6 +181,12 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
 
             if (respuesta.id == "0")
             {
+
+                return View("IniciarSesion", "Usuario y contraseña inválidos");
+
+            }
+            else
+            {
                 HttpContext.Session.SetString("idGym", respuesta.id);
                 HttpContext.Session.SetString("nombreGym", respuesta.nombre);
                 HttpContext.Session.SetString("descripGym", respuesta.descripcion);
@@ -179,13 +197,7 @@ namespace Proyecto3LenguajesISemestre_ModuloAdmin_Graciela_Randall.Controllers
                 HttpContext.Session.SetString("telefonoGym", respuesta.tel);
                 HttpContext.Session.SetString("correoGym", respuesta.correo);
 
-                return View("IniciarSesion", "Usuario y contraseña inválidos");
-
-            }
-            else
-            {
-
-                return View("Principal");
+                return View("Principal", respuesta);
 
             }
 
